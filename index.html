@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ufopeli</title>
+  <style>
+    #canvas {
+      border: 10px solid red;
+      display: block;
+      margin: 20px auto;
+      background-color: black;
+    }
+    img.hidden {
+      visibility: hidden;
+      position: absolute;
+    }
+    body {
+      background-image: url('img_space.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    h1 {
+      color: red;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Ufo</h1>
+<div style="text-align: center;">
+    <button id="startButton">Start</button>
+    <span id="ajastin" style="color: red">Aika:</span>
+</div>
+
+<canvas id="canvas" width="900" height="400"></canvas>
+
+<!-- Kuvia vain koodin käyttöön -->
+<img src="img_rocket.jpg" id="rocket" class="hidden" />
+<img src="img_planet.jpg" id="planet" class="hidden" />
+<img src="img_planet2.jpg" id="planet2" class="hidden" />
+
+<script src="ufo.js"></script>
+</body>
+</html>
