@@ -3,28 +3,9 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ufopeli</title>
-  <style>
-    #canvas {
-      border: 10px solid red;
-      display: block;
-      margin: 20px auto;
-      background-color: black;
-    }
-    img.hidden {
-      visibility: hidden;
-      position: absolute;
-    }
-    body {
-      background-image: url('img_space.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-    h1 {
-      color: red;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -35,11 +16,16 @@
 </div>
 
 <canvas id="canvas" width="900" height="400"></canvas>
+<div id="toast"></div>
 
-<!-- Kuvia vain koodin käyttöön -->
+
+<!-- Kuvia/audio vain koodin käyttöön -->
 <img src="img_rocket.jpg" id="rocket" class="hidden" />
 <img src="img_planet.jpg" id="planet" class="hidden" />
 <img src="img_planet2.jpg" id="planet2" class="hidden" />
+<img src="img_planet3.jpg" id="planet3" class="hidden" />
+<audio src="win.mp3" id="winSound"></audio>
+<audio src="lose.mp3" id="loseSound"></audio>
 
 <script src="ufo.js"></script>
 </body>
